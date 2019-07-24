@@ -1,7 +1,7 @@
 package br.com.testes;
 import br.com.orientacao_a_objetos.Agencia;
 import br.com.orientacao_a_objetos.Conta;
-public class TesteConta {
+public class TesteContaEAgencia {
 
 	public static void main(String[] args) {
 		
@@ -22,10 +22,19 @@ public class TesteConta {
 		
 		//teste relacionamento
 		conta1.setAgencia(agencia1);
-		conta2.setAgencia(agencia2);		
+		conta2.setAgencia(agencia2);			
 		
-		conta1.consultaDados();
-		conta2.consultaDados();
+		//teste de metodos
+		conta1.deposita(200.00);
+		conta2.saca(50.00);
+		
+		System.out.println("conta: " +conta1.getNumConta());
+		conta1.consultaSaldo();
+		System.out.println(conta1.imprimeExtrato(20));
+		
+		System.out.println("conta: " +conta2.getNumConta());
+		conta2.consultaSaldo();
+		System.out.println(conta2.imprimeExtrato(10));
 	}
 
 }

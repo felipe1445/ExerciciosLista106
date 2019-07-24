@@ -13,6 +13,10 @@ public class TesteFuncionario {
 		func2.setNomeFunc("funcionario2");
 		func2.setSalarioFunc(970.00);
 		
+		//teste de metodo
+		func1.aumentaSalario(200.00);
+		func2.aumentaSalario(50.00);
+		
 		func1.consultaDados();
 		func2.consultaDados();
 

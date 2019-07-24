@@ -2,7 +2,8 @@ package br.com.escola;
 
 public class Aluno {
 	String nomeAluno,dataNascAluno;
-	int rgAluno;	
+	int rgAluno;
+	Turma turma;
 	
 	public String getNomeAluno() {
 		return nomeAluno;
@@ -21,9 +22,16 @@ public class Aluno {
 	}
 	public void setRgAluno(int rgAluno) {
 		this.rgAluno = rgAluno;
-	}	
-	
+	}		
+	public Turma getTurma() {
+		return turma;
+	}
+	public void setTurma(Turma turma) {
+		this.turma = turma;
+	}
 	public void consultaDados() {
 		System.out.println("Nome: "+this.nomeAluno+ " RG: "+this.rgAluno+ " Data de Nascimento: "+this.dataNascAluno);
+		this.turma.consultaDados();
+		
 	}
 }

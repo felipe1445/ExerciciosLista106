@@ -2,7 +2,7 @@ package br.com.orientacao_a_objetos;
 
 public class Agencia {
 	
-	int numAgencia;
+	 int numAgencia;
 
 	public int getNumAgencia() {
 		return numAgencia;

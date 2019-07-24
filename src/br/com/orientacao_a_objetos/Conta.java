@@ -43,4 +43,28 @@ public class Conta {
 				+ this.saldo + " Limite: "+ this.limite+ " Agencia: "+this.agencia.numAgencia);
 	}
 	
+	
+	public void deposita(double valor) {
+		this.saldo+=valor;
+	}
+	
+	public void saca(double valor) {
+		this.saldo-=valor;
+	}
+	
+	public void consultaSaldo() {
+		System.out.println("saldo com limite: "+ (this.saldo+this.limite));
+	}
+	
+	public void transferirValor( Conta contaDestino, double valor ) {
+		 this.saldo -= valor ;
+		 contaDestino.saldo += valor;
+	}
+	
+	public String imprimeExtrato(int dias) {
+		//codigo
+		return "extrato dos ultimos "+ String.valueOf(dias) + " dias";			
+		 
+	}
+	
 }

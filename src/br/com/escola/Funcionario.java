@@ -20,4 +20,8 @@ public class Funcionario {
 	public void consultaDados() {
 		System.out.println("Nome: " + this.nomeFunc+ " Salario: " +this.salarioFunc);
 	}
+	
+	public void aumentaSalario(double valor) {
+		this.salarioFunc+=valor;
+	}
 }
