@@ -2,7 +2,7 @@ package br.com.escola;
 
 public class Funcionario {
 	String nomeFunc;
-	double salarioFunc;
+	double salarioFunc= 1000.00;
 	
 	public String getNomeFunc() {
 		return nomeFunc;
