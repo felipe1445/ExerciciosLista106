@@ -4,6 +4,10 @@ public class Agencia {
 	
 	 int numAgencia;
 
+	public Agencia(int numAgencia) {		
+		this.numAgencia = numAgencia;
+	}
+
 	public int getNumAgencia() {
 		return numAgencia;
 	}

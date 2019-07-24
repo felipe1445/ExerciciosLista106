@@ -6,6 +6,10 @@ public class Conta {
 	double saldo;
 	Agencia agencia;
 
+	public Conta(Agencia agencia) {		
+		this.agencia = agencia;
+	}
+
 	public int getNumConta() {
 		return numConta;
 	}
