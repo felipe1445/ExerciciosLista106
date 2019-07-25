@@ -2,7 +2,7 @@ package br.com.orientacao_a_objetos;
 
 public class Agencia {
 	
-	 int numAgencia;
+	private  int numAgencia;
 
 	public Agencia(int numAgencia) {		
 		this.numAgencia = numAgencia;

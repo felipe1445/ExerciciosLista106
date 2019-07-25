@@ -1,13 +1,18 @@
 package br.com.orientacao_a_objetos;
 
-public class Conta {
-	int numConta;
-	double limite = 100.00;
-	double saldo;
-	Agencia agencia;
+import java.util.Random;
 
-	public Conta(Agencia agencia) {		
+public class Conta {
+	private int numConta;
+	private double limite = 100.00;
+	private double saldo;
+	private Agencia agencia;
+	static int contadorContas = 0;	
+	
+	public Conta (Agencia agencia) {		
 		this.agencia = agencia;
+		contadorContas++;		
+		this.numConta = new Random().nextInt(9999999) + contadorContas;
 	}
 
 	public int getNumConta() {
@@ -42,9 +47,17 @@ public class Conta {
 		this.agencia = agencia;
 	}
 
+	public static int getContadorContas() {
+		return contadorContas;
+	}
+
+	public static void setContadorContas(int contadorContas) {
+		Conta.contadorContas = contadorContas;
+	}
+
 	public void consultaDados() {
 		System.out.println("Numero Conta: " + this.numConta + " Saldo: " 
-				+ this.saldo + " Limite: "+ this.limite+ " Agencia: "+this.agencia.numAgencia);
+				+ this.saldo + " Limite: "+ this.limite+ " Agencia: "+this.agencia.getNumAgencia());
 	}
 	
 	
@@ -69,6 +82,11 @@ public class Conta {
 		//codigo
 		return "extrato dos ultimos "+ String.valueOf(dias) + " dias";			
 		 
+	}
+	
+	public static void zeraContador() {
+		System.out.println("zerando contas...Contas criadas ate o momento: "+ contadorContas);
+		contadorContas=0;	
 	}
 	
 }

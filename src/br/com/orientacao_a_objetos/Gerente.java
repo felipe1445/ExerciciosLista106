@@ -1,8 +1,10 @@
 package br.com.orientacao_a_objetos;
 
 public class Gerente {
-	String nomeGerente;
-	double salarioGerente;
+	private String nomeGerente;
+	private double salarioGerente;
+	
+	
 	public String getNomeGerente() {
 		return nomeGerente;
 	}

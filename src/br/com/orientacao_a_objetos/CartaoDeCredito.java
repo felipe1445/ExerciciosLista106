@@ -1,9 +1,9 @@
 package br.com.orientacao_a_objetos;
 
 public class CartaoDeCredito {
-	int numCartaoCred;
-	String dataValCartaoCred;
-	Cliente cliente;	
+	private int numCartaoCred;
+	private String dataValCartaoCred;
+	private Cliente cliente;	
 	
 	public CartaoDeCredito(int numCartaoCred, String dataValCartaoCred) {		
 		this.numCartaoCred = numCartaoCred;
@@ -32,7 +32,7 @@ public class CartaoDeCredito {
 	}
 
 	public void consultaDados() {
-		System.out.println("Numero Cartão: "+ this.numCartaoCred + "\nData de Validade: "+this.dataValCartaoCred+ "\nCliente: "+this.cliente.nomeCliente);
+		System.out.println("Numero Cartão: "+ this.numCartaoCred + "\nData de Validade: "+this.dataValCartaoCred+ "\nCliente: "+this.cliente.getNomeCliente());
 	}
 	
 	

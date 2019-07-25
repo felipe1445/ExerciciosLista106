@@ -1,8 +1,10 @@
 package br.com.escola;
 
 public class Turma {
-	String periodoTurma,siglaTurma,tipoEnsinoTurma;
-	int serieTurma;
+	private String periodoTurma,siglaTurma,tipoEnsinoTurma;
+	private int serieTurma;
+	
+	
 	public String getPeriodoTurma() {
 		return periodoTurma;
 	}

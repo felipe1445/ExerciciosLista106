@@ -1,9 +1,9 @@
 package br.com.escola;
 
 public class Aluno {
-	String nomeAluno,dataNascAluno;
-	int rgAluno;
-	Turma turma;
+	private String nomeAluno,dataNascAluno;
+	private int rgAluno;
+	private Turma turma;
 	
 	public String getNomeAluno() {
 		return nomeAluno;
