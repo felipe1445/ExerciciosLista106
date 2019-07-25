@@ -1,11 +1,11 @@
 package br.com.statico;
 
-import br.com.escola.Funcionario;
+import br.com.heranca.Funcionario;
 
 public class TesteFuncionarioStatic {
 
 	public static void main(String[] args) {
-		Funcionario func1 = new Funcionario();		
+		Funcionario func1 = new Funcionario("aaaa",999.00);		
 		
 		//definindo dados para 2 funcionarios
 		func1.setNomeFunc("Antenor");
@@ -13,7 +13,7 @@ public class TesteFuncionarioStatic {
 		
 		//imprimindo dados com salario normal
 		System.out.println("Valores Padroes");
-		func1.consultaDados();
+		func1.mostraDados();
 	
 		
 		System.out.println("-------------------------------");

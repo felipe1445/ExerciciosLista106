@@ -1,11 +1,16 @@
-package br.com.escola;
+package br.com.heranca;
 
 public class Funcionario {
 	private String nomeFunc;
 	private double salarioFunc= 1000.00;
 	private static double valeRefeicao = 20.00;	
-	private double bonificacao = 10.0;
-
+	private double bonificacao = 10.00;
+	
+	public Funcionario(String nomeFunc, double salarioFunc) {
+		super();
+		this.nomeFunc = nomeFunc;
+		this.salarioFunc = salarioFunc;
+	}
 	
 	public String getNomeFunc() {
 		return nomeFunc;
@@ -34,7 +39,7 @@ public class Funcionario {
 		this.bonificacao = bonificacao;
 	}
 
-	public void consultaDados() {
+	public void mostraDados() {
 		System.out.println("\nNome do funcionario: "+this.nomeFunc + "\nSalario: R$" + String.valueOf(this.salarioFunc)
 		+ "\nBonificação: " +this.bonificacao +"%");		
 	}
@@ -48,7 +53,7 @@ public class Funcionario {
 	}	
 	
 	public void calculaBonificacao() {
-		this.salarioFunc*= 1+bonificacao/100;
+		this.salarioFunc*= 1+bonificacao/100.00;
 	}
 
 	
