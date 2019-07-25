@@ -5,7 +5,7 @@ import java.util.Random;
 public class Conta {
 	private int numConta;
 	private double limite = 100.00;
-	private double saldo;
+	public double saldo;
 	private Agencia agencia;
 	static int contadorContas = 0;	
 	
